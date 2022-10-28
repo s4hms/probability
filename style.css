@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /* height: 200vh; */
+  /* justify-items: center; */
+  align-items: start;
+  justify-content: start;
+
+  padding: 0.5rem;
+}
+
+.heading {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  /* border: 2px solid red; */
+  font-size: 1rem;
+  text-align: center;
+  align-self: center;
+  text-decoration: underline;
+}
+
+.factorial {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  /* border: 2px solid red; */
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 221px;
+}
+
+h3 {
+  text-align: center;
+  background-color: firebrick;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.factorial p:first-of-type {
+  display: inline-block;
+}
+
+input[type="number"] {
+  width: 4rem;
+  padding: 3px 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+input[value="Calculate"] {
+  padding: 3px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+input[value="Calculate"]:hover {
+  cursor: pointer;
+}
+
+.factorial p,
+.ndiv p,
+.rdiv p,
+.poss-oc p,
+.numb-tril p,
+.fav-op p {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.permutation {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 250px;
+  padding: 1rem;
+}
+
+.ndiv,
+.rdiv,
+.poss-oc,
+.numb-tril,
+.fav-op {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.combination {
+  grid-column: 3/5;
+  grid-row: 3/4;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 250px;
+  padding: 1rem;
+}
+
+.examp {
+  text-align: center;
+
+  font-size: 14px;
+  text-shadow: 2px 2px 2px rgba(90, 96, 132, 0.6);
+  position: relative;
+  top: -20px;
+}
+
+.prob-ex {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  height: 330px;
+}
+
+.prob-atl {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  height: 330px;
+}
+
+.prob-atm {
+  grid-column: 3/5;
+  grid-row: 5/6;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  height: 330px;
+}
+
+@media (max-width: 1475px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: stretch;
+    align-content: center;
+  }
+  .factorial {
+    grid-column: 1/-1;
+  }
+  .permutation {
+    grid-column: 1/-1;
+  }
+  .combination {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+  .prob-ex {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+  }
+  .prob-atl {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+  }
+  .prob-atm {
+    grid-column: 1/-1;
+    grid-row: 7/8;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Factorial and Probability</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Factorial, Permutation, Combination and Probability Calculator</h1>
+    </div>
+    <div class="factorial">
+      <h3>Factorial</h3>
+
+      <p>Number to find factorial of:</p>
+      <input type="number" min="0" class="fact-input" value="0" />
+      <input type="submit" value="Calculate" class="fact-calc" />
+      <p class="factorial-answer"></p>
+    </div>
+
+    <div class="permutation">
+      <h3>Permutation</h3>
+
+      <div class="ndiv">
+        <p>Total number of Objects, 'n':</p>
+        <input type="number" value="1" class="perm-n" min="0" />
+      </div>
+      <div class="rdiv">
+        <p>Number of Objects selected at one time, 'r':</p>
+        <input type="number" value="1" class="perm-r" min="0" />
+        <input type="button" value="Calculate" class="perm-calc" />
+      </div>
+
+      <p class="perm-answer"></p>
+    </div>
+
+    <div class="combination">
+      <h3>Combination</h3>
+      <div class="ndiv">
+        <p>Total number of Objects, 'n':</p>
+        <input type="number" value="1" class="comb-n" min="0" />
+      </div>
+      <div class="rdiv">
+        <p>Number of Objects selected at one time, 'r':</p>
+        <input type="number" value="1" class="comb-r" min="0" />
+        <input type="button" value="Calculate" class="comb-calc" />
+      </div>
+
+      <p class="comb-answer"></p>
+    </div>
+
+    <div class="prob-ex">
+      <h3>Probability of getting fixed number of favorable output</h3>
+      <p class="examp">
+        (Eg: Probability of getting 3-Heads(favorable output) in 5-tosses(number
+        of trials) is 0.3125)
+      </p>
+      <div class="poss-oc">
+        <p>Number of possible outcomes in one trial:</p>
+        <input type="number" min="1" class="one-trial-ops" value="1" />
+      </div>
+      <div class="numb-tril">
+        <p>Number of trials:</p>
+        <input type="number" min="1" class="total-trials" value="1" />
+      </div>
+      <div class="fav-op">
+        <p>Number of favorable output(s) at the end of all trial(s):</p>
+        <input type="number" min="1" class="fav-all-trials" value="1" />
+        <input type="button" value="Calculate" class="prob-ex-calc" />
+      </div>
+      <p class="prob-ex-answer"></p>
+    </div>
+
+    <div class="prob-atl">
+      <h3>Probability of getting at-least favorable output</h3>
+      <p class="examp">
+        (Eg: Probability of getting at-least 3-Heads(favorable output) in
+        5-tosses(number of trials) is 0.5)
+      </p>
+
+      <div class="poss-oc">
+        <p>Number of possible outcomes in one trial:</p>
+        <input type="number" min="1" class="one-trial-ops-atl" value="1" />
+      </div>
+      <div class="numb-tril">
+        <p>Number of trials:</p>
+        <input type="number" min="1" class="total-trials-atl" value="1" />
+      </div>
+      <div class="fav-op">
+        <p>
+          Number of at-least favorable output(s) at the end of all trial(s):
+        </p>
+        <input type="number" min="1" class="fav-all-trials-atl" value="1" />
+        <input type="button" value="Calculate" class="prob-atl-calc" />
+      </div>
+      <p class="prob-atl-answer"></p>
+    </div>
+
+    <div class="prob-atm">
+      <h3>Probability of getting at-most favorable output</h3>
+
+      <p class="examp">
+        (Eg: Probability of getting at-most 3-Heads(favorable output) in
+        5-tosses(number of trials) is 0.8125)
+      </p>
+
+      <div class="poss-oc">
+        <p>Number of possible outcomes in one trial:</p>
+        <input type="number" min="1" class="one-trial-ops-atm" value="1" />
+      </div>
+      <div class="numb-tril">
+        <p>Number of trials:</p>
+        <input type="number" min="1" class="total-trials-atm" value="1" />
+      </div>
+      <div class="fav-op">
+        <p>Number of at-most favorable output(s) at the end of all trial(s):</p>
+        <input type="number" min="1" class="fav-all-trials-atm" value="1" />
+        <input type="button" value="Calculate" class="prob-atm-calc" />
+      </div>
+      <p class="prob-atm-answer"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
